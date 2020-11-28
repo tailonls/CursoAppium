@@ -3,13 +3,13 @@ Curso da udemy sobre automacao mobile: https://www.udemy.com/course/testes-appiu
 
 #Instalar Android:
 
-	1- Baixar versão mais atualizada do Android Estudio
+	1- Baixar versão mais atualizada do Android Studio
 		h ttps://developer.android.com/studio/index.html?hl=pt-br
 
 	2 - Durante a instalação vá em: Custom -> marcar SDK, AVD, etc... (irá baixar e atualizar pacotes)
 	
-	3 - Vá em: Confugure->"SDK Manager" e marque as seguintes opções:
-		SDK platforms: Informe a versão do android q você ira testar
+	3 - Vá em: Configure->"SDK Manager" e marque as seguintes opções:
+		SDK platforms: Informe a versão do android que você irá testar
 		SDK Tools: 
 			Android SDK Build tools 
 			Android Emulator
@@ -21,14 +21,14 @@ Curso da udemy sobre automacao mobile: https://www.udemy.com/course/testes-appiu
 
 	5 - Clique 'OK' e o sistema começará a baixar as dependências requisitadas.
 	
-#Configurar variaiveis de ambiente Android:
+#Configurar variáveis de ambiente Android:
 
-	1 - Painel de Controle\Sistema e Segurança\Sistema -> Configurações Avançadas do Sistema -> Variaveis de ambiente
+	1 - Painel de Controle\Sistema e Segurança\Sistema -> Configurações Avançadas do Sistema -> Variáveis de ambiente
 	
-		Em Variaveis do sistema->Novo:
+		Em Variáveis do sistema->Novo:
 		
 			ANDROID_HOME = Android SDK location copiado anteriormente
-			Path->editar: no inicio aicione: 
+			Path->editar: no início adicione: 
 				%ANDROID_HOME%\tools;
 				%ANDROID_HOME%\tools\bin;
 				%ANDROID_HOME%\platform-tools;
@@ -44,23 +44,23 @@ Curso da udemy sobre automacao mobile: https://www.udemy.com/course/testes-appiu
 	2 - Empty project
 	3 - Em AVD Manager -> Crie um novo Android Virtual Device (escolha a versão do android)
 	
-	Você pode executar pelo Android Estudio ou pelo emulador:
+	Você pode executar pelo Android Studio ou pelo emulador:
 	
 		- Abrir cmd e digite emulator -list-avds
 		- Vai aparecer todos o emuladores criados
-		- Para executar o emulador você precisa estar em um diretório especifico %ANDROID_HOME%\tools
+		- Para executar o emulador você precisa estar em um diretório específico %ANDROID_HOME%\tools
 		- Digite emulator @nome_do_seu_emulador 
 
 #Instalar Appium:
 	
-	h ttps://github.com/appium/appium-desktop/releases
+	https://github.com/appium/appium-desktop/releases
 	Obs.: A versão usada no curso é a 1.3.2 (mas instalamos a mais atual)
 	
-#Habilitar opção de desenvolvedor no celular fisico:
+#Habilitar opção de desenvolvedor no celular físico:
 	
 	1- Ativar modo desenvolvedor: 
 		- Ir em Configurações -> Informações do Software 
-		- Clique no numero da versão varias vezes até aparecer uma mensagem dizendo que o modo desenvolvedor está ativado
+		- Clique no número da versão várias vezes até aparecer uma mensagem dizendo que o modo desenvolvedor está ativado
 		- Volte no menu Configurações, deve ter aparecido "Opções do Desenvolvedor"
 		- Habilitar modo de depuração USB
 
@@ -75,7 +75,7 @@ Curso da udemy sobre automacao mobile: https://www.udemy.com/course/testes-appiu
 	    automationName 	= uiautomator2
 	    appPackage 		= caminho do pacote do app criado pelos developers
 	    appActivity 	= nome dado ao app pelos developers
-	5 - Clique em: Start Sesson, deve aparecer a tela do app
+	5 - Clique em: Start Session, deve aparecer a tela do app
 
 #Como pegar o appPackage e appActivity do APP:
 
@@ -91,3 +91,5 @@ Curso da udemy sobre automacao mobile: https://www.udemy.com/course/testes-appiu
 		Onde: 
 			com.google.android.youtube = appPackage
 			com.google.android.apps.youtube.app.WatchWhileActivity = appActivity
+
+
