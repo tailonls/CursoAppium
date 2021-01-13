@@ -71,7 +71,7 @@ Curso da udemy sobre automacao mobile: https://www.udemy.com/course/testes-appiu
 	3 - Clicar em: Start Inspector Session
 	4 - Informar as desired capabilities do APP:
 		platformName 	= Android
-	    deviceName		= Nome do seu device (Comando adb devices no cmd)
+	    deviceName		= Nome do seu device (Comando **adb devices** no cmd)
 	    automationName 	= uiautomator2
 	    appPackage 		= caminho do pacote do app criado pelos developers
 	    appActivity 	= nome dado ao app pelos developers
